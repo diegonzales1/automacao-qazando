@@ -1,0 +1,9 @@
+steps\LoginSteps.class
+runner\RunCucumber.class
+steps\CadastroUsuarioSteps.class
+runner\RunBase.class
+pages\LoginPage.class
+pages\HomePage.class
+runner\RunBase$Browser.class
+pages\CadastroUsuarioPage.class
+runner\RunBase$1.class
