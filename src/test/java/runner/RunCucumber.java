@@ -24,3 +24,4 @@ public class RunCucumber extends RunBase{
 }
 
 //mvn test -Dtest=RunCucumber cluecumber-report:reporting
+//mvn test -Dtest=RunCucumber -DBrowser=Chrome cluecumber-report:reporting

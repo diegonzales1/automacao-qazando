@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCucumber
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.476 s <<< FAILURE! - in runner.RunCucumber
-Login.Login com sucesso  Time elapsed: 0.105 s  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.6 s <<< FAILURE! - in runner.RunCucumber
+Login.Login com sucesso  Time elapsed: 0.095 s  <<< ERROR!
 java.lang.ExceptionInInitializerError
 Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @153f5a29
 
 Login.Cenario: Login com campos vazio  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter
 
-Login.Cenario: Login com campos vazio  Time elapsed: 0.006 s  <<< ERROR!
+Login.Cenario: Login com campos vazio  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter
 
 Login.Cenario: Login com campos vazio  Time elapsed: 0.003 s  <<< ERROR!
@@ -18,7 +18,7 @@ java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.tho
 Cadastro de usuário.Nome do usuário vazio  Time elapsed: 0.004 s  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter
 
-runner.RunCucumber  Time elapsed: 0.082 s  <<< ERROR!
+runner.RunCucumber  Time elapsed: 0.229 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "runner.RunCucumber.getDriver()" is null
 	at runner.RunCucumber.stop(RunCucumber.java:22)
 

@@ -23,7 +23,7 @@ public class LoginSteps extends RunCucumber {
 
     @Dado("^que eu estou na tela de login$")
     public void que_eu_estou_na_tela_de_login() {
-       initDriver(Browser.CHROME);
+        initDriver(Browser.FIREFOX);
         homePage.acessarAplicacao();
         homePage.acessarTelaLogin();
     }

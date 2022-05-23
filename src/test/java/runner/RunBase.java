@@ -2,6 +2,7 @@ package runner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,16 +21,21 @@ public class RunBase {
         switch (browser){
             case CHROME:
                 driver = new ChromeDriver();
-                driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-                driver.manage().window().maximize();
                 break;
             case FIREFOX:
-                throw new IllegalArgumentException("Firefox não suportado");
+                driver = new FirefoxDriver();
+                break;
             case EDGE:
                 throw new IllegalArgumentException("Edge não suportado");
             default:
-                throw new IllegalArgumentException("Navegador não encontrado! Passe um navegador exisente");
+                throw new IllegalArgumentException("Navegador não encontrado! Passe um navegador existente");
         }
+
+        if(driver != null){
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
+        }
+
         return driver;
     }
 
